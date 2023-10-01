@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIM Registration</title>
-    <link rel="stylesheet" href="styles/sim_registration.css">
+    <link rel="stylesheet" href="./styles/sim_registration.css">
 </head>
 
 <body>
@@ -32,10 +32,21 @@
             <p>By completing this form, I understand and agree that any personal data I will provide for SIM
                 Registration will be processed in accordance with SIM Registration Act, the Data Privacy Act of 2012,
                 and the Privacy Policy of Smart Globe.</p>
-                <form action="" method="get">
-                    <input type="tel" name="mobile" id="mobile">
-                    <input type="submit" value="Register">
-                </form>
+            <form action="" method="get">
+                <div class="register">
+                    <p>Enter mobile number:</p>
+                    <div class="input">
+                        <div class="number">
+                        <span>63</span>
+                        <input type="text" name="mobile" id="mobile" maxlength="10">
+                        </div>
+                        
+                        <input type="submit" value="Register" id="submit">
+                    </div>
+
+                </div>
+
+            </form>
         </div>
     </div>
 </body>
