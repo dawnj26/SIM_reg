@@ -10,8 +10,10 @@ body {
 
 .main-container {
     width: 672px;
-    height: 100vh;
+    height: 95vh;
     background-color: #EDF2F4;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .top {
@@ -59,5 +61,5 @@ input[type="radio"] {
     width: 100%;
     height: 2.5rem;
     border: none;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
