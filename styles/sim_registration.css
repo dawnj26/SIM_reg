@@ -75,6 +75,11 @@ body {
 
 .footer {
     padding: 40px;
+    height: 100%;
+}
+
+.footer, #mobile, .register {
+    background-color: #EDF2F4;
 }
 
 .footer > p {
@@ -83,16 +88,21 @@ body {
 }
 
 .register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: .5rem 1rem;
-    border: #D90429 solid 2px;
+    border: #EF233C solid 2px;
     border-radius: 12px;
     margin-top: 1rem;
 }
 
 .register p {
+    display: inline;
     margin: 0;
     font-size: 12px;
 }
+
 
 .input {
     display: flex;
@@ -101,7 +111,11 @@ body {
     margin: 0 1rem;
 }
 
-.input input {
+.mobile-wrapper {
+    width: 65%;
+}
+
+#mobile, #submit{
     font-family: 'Rubik', sans-serif;
     font-size: 1rem;
 }
@@ -116,7 +130,12 @@ body {
     transition: ease 300ms;
 }
 
-#submit:hover {
+#submit:disabled {
+    background-color: #8D99AE;
+    cursor: not-allowed;
+}
+
+#submit:active:hover {
     background-color: #D90429;
 }
 
@@ -132,4 +151,11 @@ body {
 #mobile:focus, #mobile {
     border: none;
     outline: none;
+}
+
+/* Error style */
+
+#number-error {
+    margin-top: .5rem;
+    font-size: 12px;
 }

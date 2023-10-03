@@ -18,7 +18,7 @@
                 <p>
                     In Compliance with the Republic Act No. 11934, all active SIM cards will need to be registered to
                     keep
-                    the scammers at bay. <span>Register your SIM with use now!</span>
+                    the scammers at bay. <span>Register your SIM with us now!</span>
                 </p>
                 <div class="logos">
                     <img src="./images/PSU-Intel.png" alt="">
@@ -32,23 +32,32 @@
             <p>By completing this form, I understand and agree that any personal data I will provide for SIM
                 Registration will be processed in accordance with SIM Registration Act, the Data Privacy Act of 2012,
                 and the Privacy Policy of Smart Globe.</p>
-            <form action="" method="get">
+            <form action="./pages/register.php" method="POST">
                 <div class="register">
-                    <p>Enter mobile number:</p>
-                    <div class="input">
-                        <div class="number">
-                        <span>63</span>
-                        <input type="text" name="mobile" id="mobile" maxlength="10">
+                    <div class="mobile-wrapper">
+                        <p>Enter mobile number:</p>
+                        <div class="input">
+                            <div class="number">
+                                <span>63</span>
+                                <input type="text" name="mobile" id="mobile" maxlength="10">
+                            </div>
+
                         </div>
-                        
-                        <input type="submit" value="Register" id="submit">
                     </div>
+                    <input type="submit" value="Register" id="submit" disabled>
+                </div>
+                <div id="number-error">
 
                 </div>
-
             </form>
         </div>
     </div>
+
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./scripts/sim_check.js"></script>
 </body>
 
 </html>
