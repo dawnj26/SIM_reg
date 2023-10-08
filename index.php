@@ -49,6 +49,7 @@
                 <div id="number-error">
 
                 </div>
+                <a href="./pages/registered_numbers.php"><p>View all registered numbers</p></a>
             </form>
         </div>
     </div>

@@ -4,6 +4,7 @@ require("../database/config.php");
 if (!empty(isset($_POST['mobileNum'])) && isset($_POST['mobileNum'])) {
     $mobileInput = $_POST['mobileNum'];
     checkNumber($conn, $mobileInput);
+    $conn->close();
 }
 
 function checkNumber($conn, $mobileInput)
@@ -18,4 +19,6 @@ function checkNumber($conn, $mobileInput)
     // echo "<span style='color:red'>This number does not exists</span>";
     }
 }
+
+
 ?>

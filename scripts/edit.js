@@ -1,5 +1,6 @@
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-let email = first = last = address = gender = image = bday = false
+let email = first = last = address = gender = bday = image = true
+
 
 function checkValid() {
     if (email && first && last && address && gender && image && bday) {
@@ -58,6 +59,28 @@ $('#bday').on('input', function() {
     checkValid()
 })
 
+if ($('#genderMale').attr('checked')) {
+    $('#genderMale').prop('checked', true) 
+    $('.male').css('border', '2px solid #D90429')   
+    $('.female').css('border', '1px solid #8D99AE')   
+    $('.other').css('border', '1px solid #8D99AE')
+    gender = true   
+    checkValid()
+} else if ($('#genderFemale').attr('checked')) {
+    $('#genderFemale').prop('checked', true) 
+    $('.male').css('border', '1px solid #8D99AE')   
+    $('.female').css('border', '2px solid #D90429')   
+    $('.other').css('border', '1px solid #8D99AE')
+    gender = true   
+    checkValid()
+} else {
+    $('#genderOther').prop('checked', true) 
+    $('.male').css('border', '1px solid #8D99AE')   
+    $('.female').css('border', '1px solid #8D99AE')   
+    $('.other').css('border', '2px solid #D90429')
+    gender = true   
+    checkValid()
+}
 
 $('.male').on('click', function () {
     $('#genderMale').prop('checked', true) 

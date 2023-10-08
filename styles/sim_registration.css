@@ -21,7 +21,7 @@ body {
 
 .main-container {
     width: 625px;
-    height: 577px;
+    min-height: 577px;
     box-shadow: 8px 10px 20px 0px rgba(0, 0, 0, 0.25);
     border-radius: 24px;
     border: 2px #D90429 solid;
@@ -128,15 +128,19 @@ body {
     border-radius: 12px;
     height: 2.25rem;
     transition: ease 300ms;
+    cursor: pointer;
+    pointer-events: all !important;
 }
 
 #submit:disabled {
     background-color: #8D99AE;
     cursor: not-allowed;
+
 }
 
 #submit:active:hover {
     background-color: #D90429;
+
 }
 
 .number {
@@ -158,4 +162,10 @@ body {
 #number-error {
     margin-top: .5rem;
     font-size: 12px;
+}
+
+form a > p {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 1rem 0 0 0;
 }
