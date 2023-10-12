@@ -89,7 +89,7 @@ function searchIMG($search)
                         <div id="bdayError" class="errors"></div>
                     </div>
                     <div class="gender-container">
-                        <label>Gender:</label><br>
+                        <label>Sex:</label><br>
                         <div class="radio">
                             <div class="male gender">
                                 <label for="genderMale" class="form-check-label">Male</label>
@@ -99,11 +99,6 @@ function searchIMG($search)
                                 <label for="genderFemale" class="form-check-label">Female</label>
                                 <input type="radio" name="gender" id="genderFemale" class="form-check-input"
                                     value="Female" <?php if ($female) echo "checked"; ?>>
-                            </div>
-                            <div class="other gender">
-                                <label for="genderOther" class="form-check-label">Other</label>
-                                <input type="radio" name="gender" id="genderOther" class="form-check-input"
-                                    value="Other" <?php if ($other) echo "checked"; ?>>
                             </div>
                         </div>
 

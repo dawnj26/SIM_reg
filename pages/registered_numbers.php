@@ -51,7 +51,7 @@ function searchIMG($search)
                     <th>Mobile number</th>
                     <th>Full name</th>
                     <th>Birth date</th>
-                    <th>Gender</th>
+                    <th>Sex</th>
                     <th>Address</th>
                     <th>Email address</th>
                     <th>Image</th>

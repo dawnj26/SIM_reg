@@ -45,7 +45,7 @@
                         <div id="bdayError" class="errors"></div>
                     </div>
                     <div class="gender-container">
-                        <label>Gender:</label><br>
+                        <label>Sex:</label><br>
                         <div class="radio">
                             <div class="male gender">
                                 <label for="genderMale" class="form-check-label">Male</label>
@@ -55,11 +55,6 @@
                                 <label for="genderFemale" class="form-check-label">Female</label>
                                 <input type="radio" name="gender" id="genderFemale" class="form-check-input"
                                     value="Female">
-                            </div>
-                            <div class="other gender">
-                                <label for="genderOther" class="form-check-label">Other</label>
-                                <input type="radio" name="gender" id="genderOther" class="form-check-input"
-                                    value="Other">
                             </div>
                         </div>
 
@@ -79,6 +74,7 @@
                     ?>">
                 </div>
                 <input type="submit" value="Submit" name="submit" class="btn btn-primary" id="submit" disabled>
+                <a href="../index.php" class="btn btn-secondary cancel">Cancel</a>
             </form>
         </div>
 
